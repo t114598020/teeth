@@ -162,10 +162,12 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/images/CBCT_Registration.png"
-                type="image/png">
-      </video>
+      <picture id="teaser">
+        <source srcset="./static/images/CBCT_Registration.png" type="image/png">
+        <img src="./static/images/CBCT_Registration.png" 
+            alt="CBCT Registration Teaser" 
+            loading="lazy">
+      </picture>
       <h2 class="subtitle has-text-centered">
         <span class="dnerf">3D Slicer</span> uses DentalSegmentator and BRAINS to do registration.
       </h2>
